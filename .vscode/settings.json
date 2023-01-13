@@ -1,0 +1,16 @@
+{
+    "svelte.enable-ts-plugin": true,
+    "svelte.ask-to-enable-ts-plugin": false,
+    "svelte.plugin.svelte.format.config.singleQuote": true,
+    // Controls if the editor should automatically format the line after typing
+    "editor.formatOnSave": true,
+    "cSpell.words": [
+        "boxicons",
+        "Initalise",
+        "preprocess",
+        "scrollto"
+    ], 
+    "[svelte]": {
+        "editor.defaultFormatter": "svelte.svelte-vscode"
+      },
+}
