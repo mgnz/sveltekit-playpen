@@ -1,0 +1,42 @@
+*,
+*::before,
+*::after {
+    box-sizing: border-box;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    font: inherit;
+}
+
+body {
+    min-height: 100vh;
+}
+
+html {
+    // color-scheme: dark light;
+}
+
+img,
+picture,
+svg,
+video {
+    display: block;
+    max-width: 100%;
+}
+
+input,
+textarea,
+button,
+select {
+    font: inherit;
+}
+
+// debugging
+
+// * {
+//     box-sizing: border-box;
+//     outline: 1px solid limegreen !important;
+//     background: rgb(0 100 0 / 0.05) !important;
+// }
