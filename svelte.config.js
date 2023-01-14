@@ -14,16 +14,17 @@ export default {
 	preprocess: [preprocess()],
 
 	kit: {
-		// target: '#svelte',
+		// documentation (sveltejs/adapter-static) : https://github.com/sveltejs/kit/tree/master/packages/adapter-static#sveltejsadapter-static
 		adapter: adapter({
-			// default options are shown. On some platforms
-			// these options are set automatically — see below
-			// pages: 'build',
-			// assets: 'build',
+			// documentation : https://github.com/sveltejs/kit/tree/master/packages/adapter-static#spa-mode
+			// setting 'SPA Mode'
+			// - setting fallback; and strict mode (to check for any precompile pages)
+
 			fallback: 'index.html',
-			// precompress: false,
 			strict: true,
 		}),
-		// paths: { base: dev ? '' : '/test_template' }
+		// documentation : https://github.com/sveltejs/kit/tree/master/packages/adapter-static#github-pages
+		// setting the name of the repo for where the static site builds too 
+		paths: { base: dev ? '' : '/sveltekit-playpen' }
 	}
 };
