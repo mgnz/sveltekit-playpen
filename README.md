@@ -36,3 +36,18 @@ npm run build
 You can preview the production build with `npm run preview`.
 
 > To deploy your app, you may need to install an [adapter](https://kit.svelte.dev/docs/adapters) for your target environment.
+
+## ...
+
+```
+nvs use node/18.13.0/x64 
+pnpm install
+pnpm build
+pnpm run dev
+```
+
+## Notes
+
+- https://jsonplaceholder.typicode.com/photos
+- https://api.github.com/users?per_page=5
+- https://jsonplaceholder.typicode.com/photos/10
