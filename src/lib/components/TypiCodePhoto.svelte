@@ -27,6 +27,8 @@
 <script context="module">
 -->
 <script lang="ts">
+	import { onMount } from 'svelte';
+
 	console.log('TypiCodePhoto: script');
 
 	let loadPhotoPromise = Promise.resolve([]);
@@ -51,10 +53,9 @@
 		}
 	};
 
-	const handleClick = () => {
-		// Now set it to the real fetch promise
+	onMount(async () => {
 		loadPhotoPromise = loadPhoto(10);
-	};
+	});
 </script>
 
 <!-- {#if photo}
@@ -64,8 +65,6 @@
 	<img src={photo.thumbnailUrl} alt="STFU" />
 	<h2>{message}</h2>
 {/if} -->
-
-<button on:click={handleClick}> Load Users </button>
 
 {#await loadPhotoPromise}
 	<p>...waiting</p>
